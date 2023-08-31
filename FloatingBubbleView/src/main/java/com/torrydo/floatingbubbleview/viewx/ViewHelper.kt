@@ -48,7 +48,7 @@ object ViewHelper {
     ): View {
         val view = fromDrawable(context, drawable)
         return view.apply {
-            layoutParams = ViewGroup.LayoutParams(widthDp.toPx(), heightDp.toPx())
+            layoutParams = ViewGroup.LayoutParams(widthDp, heightDp)
         }
 
     }
